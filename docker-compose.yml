@@ -1,0 +1,13 @@
+version: "3.5"
+services:
+
+  node:
+    image: node:10.15.3-alpine
+    working_dir: /app
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./:/app
+    environment:
+      - CYPRESS_INSTALL_BINARY=0
+    command: /bin/sh -c "npm install && npm run start:dev"
