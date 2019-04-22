@@ -2,6 +2,8 @@
 
 Issue: https://github.com/nestjs/swagger/issues/201
 
+Controller and the test models: `apps/api/src/app/app.controller.ts`
+
 Run:
 ````bash
 docker-compose up -d
